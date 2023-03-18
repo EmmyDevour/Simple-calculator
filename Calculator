@@ -1,0 +1,19 @@
+#if else caculator program🔥
+# Take user input for two numbers and the operation to execute
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+
+# Perform the selected operation 
+result = {
+    '+': num1 + num2,
+    '-': num1 - num2,
+    '*': num1 * num2,
+    '/': num1 / num2,
+}.get(operation, None)
+
+# Print the result or an error message
+if result is None:
+    print("Invalid operation")
+else:
+    print("Result: ", result)
